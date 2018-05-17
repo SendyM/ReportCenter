@@ -1,22 +1,23 @@
 package com.reportcenter.framework.shiro.web.filter;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import org.apache.shiro.session.SessionException;
-import org.apache.shiro.subject.Subject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import com.reportcenter.common.constant.CommonConstant;
 import com.reportcenter.common.utils.MessageUtils;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.common.utils.SystemLogUtils;
 import com.reportcenter.common.utils.security.ShiroUtils;
 import com.reportcenter.project.system.user.domain.User;
+import org.apache.shiro.session.SessionException;
+import org.apache.shiro.subject.Subject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 
 /**
  * 退出过滤器
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class LogoutFilter extends org.apache.shiro.web.filter.authc.LogoutFilter
 {

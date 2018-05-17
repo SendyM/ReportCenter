@@ -1,17 +1,18 @@
 package com.reportcenter.project.system.dict.service;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.common.utils.security.ShiroUtils;
 import com.reportcenter.project.system.dict.dao.IDictDataDao;
 import com.reportcenter.project.system.dict.domain.DictData;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 字典 业务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("dictDataService")
 public class DictDataServiceImpl implements IDictDataService

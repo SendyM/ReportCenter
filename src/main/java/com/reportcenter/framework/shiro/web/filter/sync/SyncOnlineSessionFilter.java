@@ -1,18 +1,18 @@
 package com.reportcenter.framework.shiro.web.filter.sync;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import org.apache.shiro.web.filter.PathMatchingFilter;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.reportcenter.common.constant.ShiroConstants;
 import com.reportcenter.framework.shiro.session.OnlineSessionDAO;
 import com.reportcenter.project.monitor.online.domain.OnlineSession;
+import org.apache.shiro.web.filter.PathMatchingFilter;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 
 /**
  * 同步Session数据到Db
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class SyncOnlineSessionFilter extends PathMatchingFilter
 {

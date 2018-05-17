@@ -1,8 +1,5 @@
 package com.reportcenter.project.tool.gen.util;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.velocity.VelocityContext;
 import com.reportcenter.common.constant.CommonConstant;
 import com.reportcenter.common.constant.CommonMap;
 import com.reportcenter.common.utils.DateUtils;
@@ -10,16 +7,20 @@ import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.framework.config.GenConfig;
 import com.reportcenter.project.tool.gen.domain.ColumnInfo;
 import com.reportcenter.project.tool.gen.domain.TableInfo;
+import org.apache.velocity.VelocityContext;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 代码生成器 工具类
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class GenUtils
 {
     /** 项目空间路径 */
-    private static final String projectPath = "main/java/com/ruoyi/project";
+    private static final String projectPath = "main/java/com/reportcenter/project";
 
     /** mybatis空间路径 */
     private static final String myBatisPath = "main/resources/mybatis";
@@ -28,7 +29,7 @@ public class GenUtils
     private static final String templatesPath = "main/resources/templates/";
 
     /** js空间路径 */
-    private static final String javascriptPath = "main/resources/static/ruoyi/";
+    private static final String javascriptPath = "main/resources/static/reportcenter/";
 
     /**
      * 设置列信息
@@ -222,6 +223,6 @@ public class GenUtils
     {
         System.out.println(StringUtils.convertToCamelCase("user_name"));
         System.out.println(replaceKeyword("岗位信息表"));
-        System.out.println(getModuleName("com.ruoyi.project.system"));
+        System.out.println(getModuleName("com.reportcenter.project.system"));
     }
 }

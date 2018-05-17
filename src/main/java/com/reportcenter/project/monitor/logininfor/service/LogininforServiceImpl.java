@@ -1,15 +1,16 @@
 package com.reportcenter.project.monitor.logininfor.service;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.project.monitor.logininfor.dao.ILogininforDao;
 import com.reportcenter.project.monitor.logininfor.domain.Logininfor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 系统访问日志情况信息 服务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("logininforService")
 public class LogininforServiceImpl implements ILogininforService

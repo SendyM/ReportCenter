@@ -9,25 +9,25 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 /**
  * 启动程序
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @SpringBootApplication
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class })
-@MapperScan("com.ruoyi.project.*.*.dao")
+@MapperScan("com.reportcenter.project.*.*.dao")
 public class ReportCenterApplication
 {
     public static void main(String[] args)
     {
         SpringApplication.run( ReportCenterApplication.class, args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  若依启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
-                " .-------.       ____     __        \n" +
-                " |  _ _   \\      \\   \\   /  /    \n" +
-                " | ( ' )  |       \\  _. /  '       \n" +
-                " |(_ o _) /        _( )_ .'         \n" +
-                " | (_,_).' __  ___(_ o _)'          \n" +
-                " |  |\\ \\  |  ||   |(_,_)'         \n" +
-                " |  | \\ `'   /|   `-'  /           \n" +
-                " |  |  \\    /  \\      /           \n" +
-                " ''-'   `'-'    `-..-'              ");
+        System.out.println("(♥◠‿◠)ﾉﾞ  系统启动成功   ლ(´ڡ`ლ)ﾞ \n" +
+                " .-------.       .-------.         \n" +
+                " |  _ _   \\     |  _ _   \\       \n" +
+                " | ( ' )  |      | ( ' )  |        \n" +
+                " |(_ o _) /      |(_ o _) /        \n" +
+                " | (_,_).'       | (_,_).'         \n" +
+                " |  |\\ \\       |  |\\ \\         \n" +
+                " |  | \\ `'   /  |  | \\ `'   /    \n" +
+                " |  |  \\    /   |  |  \\    /     \n" +
+                " ''-'   `'-'     ''-'   `'-'         ");
     }
 }

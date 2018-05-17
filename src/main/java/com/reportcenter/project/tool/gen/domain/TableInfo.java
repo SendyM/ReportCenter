@@ -1,14 +1,14 @@
 package com.reportcenter.project.tool.gen.domain;
 
-import java.util.List;
-
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.framework.web.page.PageDomain;
+
+import java.util.List;
 
 /**
  * ry 数据库表
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class TableInfo extends PageDomain
 {

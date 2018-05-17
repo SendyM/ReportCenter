@@ -24,7 +24,7 @@ import com.reportcenter.project.system.role.domain.Role;
 /**
  * 菜单 业务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("menuService")
 public class MenuServiceImpl implements IMenuService

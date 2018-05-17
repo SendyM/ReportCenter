@@ -1,16 +1,15 @@
 package com.reportcenter.project.system.user.domain;
 
-import java.util.Arrays;
-
-import org.apache.shiro.crypto.SecureRandomNumberGenerator;
-
 import com.reportcenter.framework.web.page.PageDomain;
 import com.reportcenter.project.system.dept.domain.Dept;
+import org.apache.shiro.crypto.SecureRandomNumberGenerator;
+
+import java.util.Arrays;
 
 /**
  * 用户对象 sys_user
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class User extends PageDomain
 {

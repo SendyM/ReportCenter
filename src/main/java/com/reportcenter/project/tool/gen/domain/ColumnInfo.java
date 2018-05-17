@@ -3,7 +3,7 @@ package com.reportcenter.project.tool.gen.domain;
 /**
  * ry数据库表列信息
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class ColumnInfo
 {

@@ -1,8 +1,11 @@
 package com.reportcenter.project.tool.gen.controller;
 
-import java.io.IOException;
-import java.util.List;
-import javax.servlet.http.HttpServletResponse;
+import com.alibaba.fastjson.JSON;
+import com.reportcenter.framework.aspectj.lang.annotation.Log;
+import com.reportcenter.framework.web.controller.BaseController;
+import com.reportcenter.framework.web.page.TableDataInfo;
+import com.reportcenter.project.tool.gen.domain.TableInfo;
+import com.reportcenter.project.tool.gen.service.IGenService;
 import org.apache.commons.io.IOUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,17 +14,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.alibaba.fastjson.JSON;
-import com.reportcenter.framework.aspectj.lang.annotation.Log;
-import com.reportcenter.framework.web.controller.BaseController;
-import com.reportcenter.framework.web.page.TableDataInfo;
-import com.reportcenter.project.tool.gen.domain.TableInfo;
-import com.reportcenter.project.tool.gen.service.IGenService;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * 代码生成 操作处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Controller
 @RequestMapping("/tool/gen")
@@ -59,7 +60,7 @@ public class GenController extends BaseController
     {
         byte[] data = genService.generatorCode(tableName);
         response.reset();
-        response.setHeader("Content-Disposition", "attachment; filename=\"ruoyi.zip\"");
+        response.setHeader("Content-Disposition", "attachment; filename=\"reportcenter.zip\"");
         response.addHeader("Content-Length", "" + data.length);
         response.setContentType("application/octet-stream; charset=UTF-8");
 
@@ -79,7 +80,7 @@ public class GenController extends BaseController
         tableNames = JSON.parseArray(tables).toArray(tableNames);
         byte[] data = genService.generatorCode(tableNames);
         response.reset();
-        response.setHeader("Content-Disposition", "attachment; filename=\"ruoyi.zip\"");
+        response.setHeader("Content-Disposition", "attachment; filename=\"reportcenter.zip\"");
         response.addHeader("Content-Length", "" + data.length);
         response.setContentType("application/octet-stream; charset=UTF-8");
 

@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.dict.service;
 
-import java.util.List;
 import com.reportcenter.project.system.dict.domain.DictData;
+
+import java.util.List;
 
 /**
  * 字典 业务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IDictDataService
 {

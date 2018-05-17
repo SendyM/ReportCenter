@@ -1,24 +1,25 @@
 package com.reportcenter.project.monitor.job.util;
 
-import java.util.Date;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.quartz.QuartzJobBean;
 import com.reportcenter.common.constant.ScheduleConstants;
 import com.reportcenter.common.utils.spring.SpringUtils;
 import com.reportcenter.project.monitor.job.domain.Job;
 import com.reportcenter.project.monitor.job.domain.JobLog;
 import com.reportcenter.project.monitor.job.service.IJobLogService;
+import org.quartz.JobExecutionContext;
+import org.quartz.JobExecutionException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.quartz.QuartzJobBean;
+
+import java.util.Date;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * 定时任务
  * 
- * @author ruoyi
+ * @author Sendy
  *
  */
 public class ScheduleJob extends QuartzJobBean

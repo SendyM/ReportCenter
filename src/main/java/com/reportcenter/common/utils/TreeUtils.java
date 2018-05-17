@@ -9,7 +9,7 @@ import com.reportcenter.project.system.menu.domain.Menu;
 /**
  * 权限数据处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class TreeUtils
 {
@@ -18,7 +18,7 @@ public class TreeUtils
      * 根据父节点的ID获取所有子节点
      * 
      * @param list 分类表
-     * @param typeId 传入的父节点ID
+     * @param parentId 传入的父节点ID
      * @return String
      */
     public static List<Menu> getChildPerms(List<Menu> list, int parentId)

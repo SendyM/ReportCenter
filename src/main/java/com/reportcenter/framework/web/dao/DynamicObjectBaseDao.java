@@ -15,7 +15,7 @@ import com.reportcenter.framework.web.page.TableDataInfo;
 /**
  * 数据DAO层通用数据处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class DynamicObjectBaseDao
 {

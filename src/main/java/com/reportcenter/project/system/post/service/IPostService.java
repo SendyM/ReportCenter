@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.post.service;
 
-import java.util.List;
 import com.reportcenter.project.system.post.domain.Post;
+
+import java.util.List;
 
 /**
  * 岗位信息 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IPostService
 {

@@ -6,7 +6,7 @@ import com.reportcenter.project.monitor.job.domain.Job;
 /**
  * 调度任务信息 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IJobDao
 {

@@ -13,7 +13,7 @@ import com.reportcenter.framework.web.domain.Message;
 /**
  * 自定义异常处理器
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @RestControllerAdvice
 public class DefaultExceptionHandler

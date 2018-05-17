@@ -12,7 +12,7 @@ import com.reportcenter.project.system.dict.domain.DictType;
 /**
  * 字典 业务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("dictTypeService")
 public class DictTypeServiceImpl implements IDictTypeService

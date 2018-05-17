@@ -1,7 +1,11 @@
 package com.reportcenter.framework.shiro.service;
 
-import java.util.concurrent.atomic.AtomicInteger;
-import javax.annotation.PostConstruct;
+import com.reportcenter.common.constant.CommonConstant;
+import com.reportcenter.common.exception.user.UserPasswordNotMatchException;
+import com.reportcenter.common.exception.user.UserPasswordRetryLimitExceedException;
+import com.reportcenter.common.utils.MessageUtils;
+import com.reportcenter.common.utils.SystemLogUtils;
+import com.reportcenter.project.system.user.domain.User;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheManager;
 import org.apache.shiro.crypto.hash.Md5Hash;
@@ -9,17 +13,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.reportcenter.common.constant.CommonConstant;
-import com.reportcenter.common.exception.user.UserPasswordNotMatchException;
-import com.reportcenter.common.exception.user.UserPasswordRetryLimitExceedException;
-import com.reportcenter.common.utils.MessageUtils;
-import com.reportcenter.common.utils.SystemLogUtils;
-import com.reportcenter.project.system.user.domain.User;
+import javax.annotation.PostConstruct;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 登录密码方法
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Component
 public class PasswordService

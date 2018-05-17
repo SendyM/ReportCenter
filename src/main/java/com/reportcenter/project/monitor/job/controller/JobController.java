@@ -1,27 +1,23 @@
 package com.reportcenter.project.monitor.job.controller;
 
-import java.util.List;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import com.reportcenter.framework.aspectj.lang.annotation.Log;
 import com.reportcenter.framework.web.controller.BaseController;
 import com.reportcenter.framework.web.domain.Message;
 import com.reportcenter.framework.web.page.TableDataInfo;
 import com.reportcenter.project.monitor.job.domain.Job;
 import com.reportcenter.project.monitor.job.service.IJobService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 调度任务信息操作处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Controller
 @RequestMapping("/monitor/job")

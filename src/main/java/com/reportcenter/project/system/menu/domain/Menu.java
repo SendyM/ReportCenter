@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 角色对象 sys_menu
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class Menu
 {

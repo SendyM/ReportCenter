@@ -1,9 +1,10 @@
 package com.reportcenter.framework.shiro.web.session;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
+import com.reportcenter.common.constant.ShiroConstants;
+import com.reportcenter.common.utils.spring.SpringUtils;
+import com.reportcenter.project.monitor.online.domain.OnlineSession;
+import com.reportcenter.project.monitor.online.domain.UserOnline;
+import com.reportcenter.project.monitor.online.service.UserOnlineServiceImpl;
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.shiro.session.ExpiredSessionException;
 import org.apache.shiro.session.InvalidSessionException;
@@ -13,16 +14,16 @@ import org.apache.shiro.session.mgt.SessionKey;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.reportcenter.common.constant.ShiroConstants;
-import com.reportcenter.common.utils.spring.SpringUtils;
-import com.reportcenter.project.monitor.online.domain.OnlineSession;
-import com.reportcenter.project.monitor.online.domain.UserOnline;
-import com.reportcenter.project.monitor.online.service.UserOnlineServiceImpl;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 主要是在此如果会话的属性修改了 就标识下其修改了 然后方便 OnlineSessionDao同步
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class OnlineWebSessionManager extends DefaultWebSessionManager
 {

@@ -1,12 +1,13 @@
 package com.reportcenter.project.monitor.job.domain;
 
-import java.io.Serializable;
 import com.reportcenter.framework.web.page.PageDomain;
+
+import java.io.Serializable;
 
 /**
  * 定时任务调度信息 sys_job
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class Job extends PageDomain implements Serializable
 {

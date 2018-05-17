@@ -1,5 +1,5 @@
 # 项目名称、版本、版权年份
-ruoyi:
+reportcenter:
   name: ReportCenter
   version: 1.1.1
   copyrightYear: 2018
@@ -13,7 +13,7 @@ server:
 #日志配置
 logging:
   level:
-    com.ruoyi: debug
+    com.reportcenter: debug
     org.springframework: WARN
     org.spring.springboot.dao: debug
 #用户配置
@@ -76,7 +76,7 @@ gen:
   # 作者
   author: Sendy
   # 默认生成包路径 module 需改成自己的模块名称 如 system monitor tool
-  packageName: com.ruoyi.project.module
+  packageName: com.reportcenter.project.module
   # 自动去除表前缀，默认是true
   autoRemovePre: true
   # 表前缀(类名不会包含表前缀)

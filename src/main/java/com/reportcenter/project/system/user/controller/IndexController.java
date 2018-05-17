@@ -1,20 +1,21 @@
 package com.reportcenter.project.system.user.controller;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import com.reportcenter.framework.config.RuoYiConfig;
+import com.reportcenter.framework.config.ReportCenterConfig;
 import com.reportcenter.framework.web.controller.BaseController;
 import com.reportcenter.project.system.menu.domain.Menu;
 import com.reportcenter.project.system.menu.service.IMenuService;
 import com.reportcenter.project.system.user.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.util.List;
 
 /**
  * 首页 业务处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Controller
 public class IndexController extends BaseController
@@ -23,7 +24,7 @@ public class IndexController extends BaseController
     private IMenuService menuService;
 
     @Autowired
-    private RuoYiConfig ruoYiConfig;
+    private ReportCenterConfig ruoYiConfig;
 
     // 系统首页
     @GetMapping("/index")

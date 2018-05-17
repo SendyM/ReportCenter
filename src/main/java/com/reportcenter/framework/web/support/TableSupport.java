@@ -1,15 +1,15 @@
 package com.reportcenter.framework.web.support;
 
-import javax.servlet.http.HttpServletRequest;
-
-import com.reportcenter.common.utils.ServletUtils;
 import com.reportcenter.common.utils.MapDataUtil;
+import com.reportcenter.common.utils.ServletUtils;
 import com.reportcenter.framework.web.page.PageUtilEntity;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 表格数据处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class TableSupport
 {

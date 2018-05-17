@@ -1,22 +1,22 @@
 package com.reportcenter.project.system.dept.service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
-
 import com.reportcenter.common.constant.UserConstants;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.common.utils.security.ShiroUtils;
 import com.reportcenter.project.system.dept.dao.IDeptDao;
 import com.reportcenter.project.system.dept.domain.Dept;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 部门管理 服务实现
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Repository("deptService")
 public class DeptServiceImpl implements IDeptService

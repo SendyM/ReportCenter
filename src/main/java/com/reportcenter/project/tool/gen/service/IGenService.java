@@ -1,12 +1,13 @@
 package com.reportcenter.project.tool.gen.service;
 
-import java.util.List;
 import com.reportcenter.project.tool.gen.domain.TableInfo;
+
+import java.util.List;
 
 /**
  * 代码生成 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IGenService
 {

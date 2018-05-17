@@ -13,7 +13,7 @@ import com.reportcenter.project.monitor.online.domain.UserOnline;
 /**
  * 在线用户 服务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("userOnlineService")
 public class UserOnlineServiceImpl implements IUserOnlineService

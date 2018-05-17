@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 /**
  * 拦截需要分页SQL 反射工具
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class ReflectHelper
 {

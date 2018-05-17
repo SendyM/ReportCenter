@@ -20,7 +20,7 @@ import com.reportcenter.project.system.user.domain.UserRole;
 /**
  * 用户 业务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("userService")
 public class UserServiceImpl implements IUserService

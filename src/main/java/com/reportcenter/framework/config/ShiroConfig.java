@@ -1,8 +1,14 @@
 package com.reportcenter.framework.config;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import javax.servlet.Filter;
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+import com.reportcenter.framework.shiro.realm.UserRealm;
+import com.reportcenter.framework.shiro.session.OnlineSessionDAO;
+import com.reportcenter.framework.shiro.session.OnlineSessionFactory;
+import com.reportcenter.framework.shiro.web.filter.LogoutFilter;
+import com.reportcenter.framework.shiro.web.filter.online.OnlineSessionFilter;
+import com.reportcenter.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
+import com.reportcenter.framework.shiro.web.session.OnlineWebSessionManager;
+import com.reportcenter.framework.shiro.web.session.SpringSessionValidationScheduler;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -13,39 +19,42 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import com.reportcenter.framework.shiro.realm.UserRealm;
-import com.reportcenter.framework.shiro.session.OnlineSessionDAO;
-import com.reportcenter.framework.shiro.session.OnlineSessionFactory;
-import com.reportcenter.framework.shiro.web.filter.LogoutFilter;
-import com.reportcenter.framework.shiro.web.filter.online.OnlineSessionFilter;
-import com.reportcenter.framework.shiro.web.filter.sync.SyncOnlineSessionFilter;
-import com.reportcenter.framework.shiro.web.session.OnlineWebSessionManager;
-import com.reportcenter.framework.shiro.web.session.SpringSessionValidationScheduler;
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
+
+import javax.servlet.Filter;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * 权限配置加载
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Configuration
 public class ShiroConfig
 {
     public static final String PREMISSION_STRING = "perms[\"{0}\"]";
 
-    // Session超时时间，单位为毫秒（默认30分钟）
+    /**
+     * Session超时时间，单位为毫秒（默认30分钟）
+     */
     @Value("${shiro.session.expireTime}")
     private int expireTime;
 
-    // 相隔多久检查一次session的有效性，单位毫秒，默认就是10分钟
+    /**
+     * 相隔多久检查一次session的有效性，单位毫秒，默认就是10分钟
+     */
     @Value("${shiro.session.validationInterval}")
     private int validationInterval;
 
-    // 登录地址
+    /**
+     * 登录地址
+      */
     @Value("${shiro.user.loginUrl}")
     private String loginUrl;
 
-    // 权限认证失败地址
+    /**
+     * 权限认证失败地址
+      */
     @Value("${shiro.user.unauthorizedUrl}")
     private String unauthorizedUrl;
 
@@ -194,14 +203,14 @@ public class ShiroConfig
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         // 对静态资源设置匿名访问
         filterChainDefinitionMap.put("/favicon.ico**", "anon");
-        filterChainDefinitionMap.put("/ruoyi.png**", "anon");
+        filterChainDefinitionMap.put("/reportcenter.png**", "anon");
         filterChainDefinitionMap.put("/css/**", "anon");
         filterChainDefinitionMap.put("/docs/**", "anon");
         filterChainDefinitionMap.put("/fonts/**", "anon");
         filterChainDefinitionMap.put("/img/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/ajax/**", "anon");
-        filterChainDefinitionMap.put("/ruoyi/**", "anon");
+        filterChainDefinitionMap.put("/reportcenter/**", "anon");
         filterChainDefinitionMap.put("/druid/**", "anon");
         // 不需要拦截的访问
         filterChainDefinitionMap.put("/login", "anon");

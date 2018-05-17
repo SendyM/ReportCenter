@@ -1,6 +1,5 @@
 package com.reportcenter.framework.web.controller;
 
-import java.util.List;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.reportcenter.common.utils.StringUtils;
@@ -11,10 +10,12 @@ import com.reportcenter.framework.web.page.TableDataInfo;
 import com.reportcenter.framework.web.support.TableSupport;
 import com.reportcenter.project.system.user.domain.User;
 
+import java.util.List;
+
 /**
  * web层通用数据处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class BaseController
 {

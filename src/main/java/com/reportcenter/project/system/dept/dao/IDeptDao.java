@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.dept.dao;
 
-import java.util.List;
 import com.reportcenter.project.system.dept.domain.Dept;
+
+import java.util.List;
 
 /**
  * 部门管理 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IDeptDao
 {

@@ -5,7 +5,7 @@ import com.reportcenter.framework.web.page.PageDomain;
 /**
  * 岗位对象 sys_post
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class Post extends PageDomain
 {

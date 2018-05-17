@@ -1,13 +1,14 @@
 package com.reportcenter.project.system.role.domain;
 
+import com.reportcenter.framework.web.page.PageDomain;
+
 import java.util.Arrays;
 import java.util.Date;
-import com.reportcenter.framework.web.page.PageDomain;
 
 /**
  * 角色对象 sys_role
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class Role extends PageDomain
 {

@@ -1,17 +1,5 @@
 package com.reportcenter.project.tool.gen.service;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.StringWriter;
-import java.util.List;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
-import org.apache.commons.io.IOUtils;
-import org.apache.velocity.Template;
-import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.Velocity;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.common.exception.base.BaseException;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.framework.config.GenConfig;
@@ -20,11 +8,24 @@ import com.reportcenter.project.tool.gen.domain.ColumnInfo;
 import com.reportcenter.project.tool.gen.domain.TableInfo;
 import com.reportcenter.project.tool.gen.util.GenUtils;
 import com.reportcenter.project.tool.gen.util.VelocityInitializer;
+import org.apache.commons.io.IOUtils;
+import org.apache.velocity.Template;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.Velocity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.List;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 /**
  * 代码生成 服务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("genService")
 public class GenServiceImpl implements IGenService

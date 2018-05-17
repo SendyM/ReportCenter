@@ -15,7 +15,7 @@ import com.reportcenter.framework.web.domain.Message;
 /**
  * 登录验证
  * 
- * @author ruoyi
+ * @author Sendy
  */
 // @RestController
 @Controller

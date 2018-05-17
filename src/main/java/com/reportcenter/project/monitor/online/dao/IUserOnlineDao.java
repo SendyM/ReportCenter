@@ -1,12 +1,13 @@
 package com.reportcenter.project.monitor.online.dao;
 
-import java.util.List;
 import com.reportcenter.project.monitor.online.domain.UserOnline;
+
+import java.util.List;
 
 /**
  * 在线用户 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IUserOnlineDao
 {

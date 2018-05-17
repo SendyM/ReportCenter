@@ -1,12 +1,13 @@
 package com.reportcenter.project.monitor.job.service;
 
-import java.util.List;
 import com.reportcenter.project.monitor.job.domain.Job;
+
+import java.util.List;
 
 /**
  * 定时任务调度信息信息 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IJobService
 {

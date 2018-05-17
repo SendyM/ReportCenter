@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import ${package}.domain.${className};
 import ${package}.service.I${className}Service;
-import com.ruoyi.framework.web.controller.BaseController;
-import com.ruoyi.framework.web.page.TableDataInfo;
-import com.ruoyi.framework.web.domain.JSON;
+import com.reportcenter.framework.web.controller.BaseController;
+import com.reportcenter.framework.web.page.TableDataInfo;
+import com.reportcenter.framework.web.domain.JSON;
 
 /**
  * ${tableComment} 控制层处理

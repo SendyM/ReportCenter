@@ -1,14 +1,14 @@
 package com.reportcenter.project.system.dept.service;
 
+import com.reportcenter.project.system.dept.domain.Dept;
+
 import java.util.List;
 import java.util.Map;
-
-import com.reportcenter.project.system.dept.domain.Dept;
 
 /**
  * 部门管理 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IDeptService
 {

@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.post.dao;
 
-import java.util.List;
 import com.reportcenter.project.system.post.domain.Post;
+
+import java.util.List;
 
 /**
  * 岗位信息 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IPostDao
 {

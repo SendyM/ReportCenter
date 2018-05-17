@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 /**
  * 读取项目相关配置
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Component
-@ConfigurationProperties(prefix = "ruoyi")
-public class RuoYiConfig
+@ConfigurationProperties(prefix = "reportcenter")
+public class ReportCenterConfig
 {
     /** 项目名称 */
     private String name;

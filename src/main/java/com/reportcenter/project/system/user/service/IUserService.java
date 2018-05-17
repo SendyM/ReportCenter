@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.user.service;
 
-import java.util.List;
 import com.reportcenter.project.system.user.domain.User;
+
+import java.util.List;
 
 /**
  * 用户 业务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IUserService
 {

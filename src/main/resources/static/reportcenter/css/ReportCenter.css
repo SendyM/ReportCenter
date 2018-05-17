@@ -1,9 +1,9 @@
 /*!
- *   ruoyi.css v1.1.1
- *   Author: Ruoyi
+ *   reportcenter.css v1.1.1
+ *   Author: Sendy
  */
 
-/** 用户管理 样式布局 */
+/** 锟矫伙拷锟斤拷锟斤拷 锟斤拷式锟斤拷锟斤拷 */
 
 .box {
 	position: relative;
@@ -92,7 +92,7 @@
 }
 
 
-/** select2 样式修改 */
+/** select2 锟斤拷式锟睫革拷 */
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
 	background-color: #1AB394;

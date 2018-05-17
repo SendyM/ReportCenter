@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.dict.dao;
 
-import java.util.List;
 import com.reportcenter.project.system.dict.domain.DictData;
+
+import java.util.List;
 
 /**
  * 字典表 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IDictDataDao
 {

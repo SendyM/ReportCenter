@@ -5,7 +5,7 @@ import com.reportcenter.common.utils.StringUtils;
 /**
  * 分页数据
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class PageDomain
 {

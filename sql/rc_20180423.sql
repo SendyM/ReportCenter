@@ -363,7 +363,7 @@ create table sys_oper_log (
   primary key (oper_id)
 ) engine=innodb auto_increment=100 default charset=utf8 comment = '操作日志记录';
 
-insert into sys_oper_log values(1, '监控管理', '在线用户-强退用户', 'com.ruoyi.project.monitor.online.controller.UserOnlineController()', 'web', 'admin', '研发部门', 'delete.do?id=1', '127.0.0.1', 'JSON参数', 0, '错误描述', '2018-03-01');
+insert into sys_oper_log values(1, '监控管理', '在线用户-强退用户', 'com.reportcenter.project.monitor.online.controller.UserOnlineController()', 'web', 'admin', '研发部门', 'delete.do?id=1', '127.0.0.1', 'JSON参数', 0, '错误描述', '2018-03-01');
 
 
 -- ----------------------------

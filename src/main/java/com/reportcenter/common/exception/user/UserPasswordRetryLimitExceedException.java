@@ -3,7 +3,7 @@ package com.reportcenter.common.exception.user;
 /**
  * 用户错误最大次数异常类
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class UserPasswordRetryLimitExceedException extends UserException
 {

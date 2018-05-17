@@ -3,7 +3,7 @@ package com.reportcenter.project.system.dept.domain;
 /**
  * 部门对象 sys_dept
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class Dept
 {

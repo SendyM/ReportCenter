@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.user.dao;
 
-import java.util.List;
 import com.reportcenter.project.system.user.domain.UserPost;
+
+import java.util.List;
 
 /**
  * 用户与岗位 表 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IUserPostDao
 {

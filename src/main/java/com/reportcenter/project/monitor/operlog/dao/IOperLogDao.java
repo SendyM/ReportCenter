@@ -1,12 +1,13 @@
 package com.reportcenter.project.monitor.operlog.dao;
 
-import java.util.List;
 import com.reportcenter.project.monitor.operlog.domain.OperLog;
+
+import java.util.List;
 
 /**
  * 操作日志 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IOperLogDao
 {

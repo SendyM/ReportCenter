@@ -1,13 +1,14 @@
 package com.reportcenter.project.system.role.service;
 
+import com.reportcenter.project.system.role.domain.Role;
+
 import java.util.List;
 import java.util.Set;
-import com.reportcenter.project.system.role.domain.Role;
 
 /**
  * 角色业务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IRoleService
 {

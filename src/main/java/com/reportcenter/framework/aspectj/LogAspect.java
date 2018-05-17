@@ -26,7 +26,7 @@ import com.reportcenter.project.system.user.domain.User;
 /**
  * 操作日志记录处理
  * 
- * @author ruoyi
+ * @author parentId
  */
 
 @Aspect
@@ -38,7 +38,11 @@ public class LogAspect
     @Autowired
     private IOperLogService operLogService;
 
-    // 配置织入点
+    /**
+     * 配置织入点
+     *
+     */
+
     @Pointcut("@annotation(com.reportcenter.framework.aspectj.lang.annotation.Log)")
     public void logPointCut()
     {

@@ -1,16 +1,5 @@
 package com.reportcenter.project.system.user.controller;
 
-import java.util.List;
-import org.apache.shiro.authz.annotation.RequiresPermissions;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import com.reportcenter.framework.aspectj.lang.annotation.Log;
 import com.reportcenter.framework.web.controller.BaseController;
 import com.reportcenter.framework.web.domain.Message;
@@ -21,11 +10,18 @@ import com.reportcenter.project.system.role.domain.Role;
 import com.reportcenter.project.system.role.service.IRoleService;
 import com.reportcenter.project.system.user.domain.User;
 import com.reportcenter.project.system.user.service.IUserService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 用户信息
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Controller
 @RequestMapping("/system/user")

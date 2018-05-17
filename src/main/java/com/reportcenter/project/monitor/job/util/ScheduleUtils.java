@@ -18,7 +18,7 @@ import com.reportcenter.project.monitor.job.domain.Job;
 /**
  * 定时任务工具类
  * 
- * @author ruoyi
+ * @author Sendy
  *
  */
 public class ScheduleUtils

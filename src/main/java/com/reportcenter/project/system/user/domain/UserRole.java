@@ -3,7 +3,7 @@ package com.reportcenter.project.system.user.domain;
 /**
  * 用户和角色关联 sys_user_role
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class UserRole
 {

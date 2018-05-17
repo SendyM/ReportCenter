@@ -18,7 +18,7 @@ import com.alibaba.druid.support.http.WebStatFilter;
 /**
  * Druid数据库信息配置加载
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Configuration
 public class DruidConfig

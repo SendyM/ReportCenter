@@ -1,12 +1,13 @@
 package com.reportcenter.project.monitor.logininfor.service;
 
-import java.util.List;
 import com.reportcenter.project.monitor.logininfor.domain.Logininfor;
+
+import java.util.List;
 
 /**
  * 系统访问日志情况信息 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface ILogininforService
 {

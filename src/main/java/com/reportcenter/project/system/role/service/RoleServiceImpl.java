@@ -21,7 +21,7 @@ import com.reportcenter.project.system.user.dao.IUserRoleDao;
 /**
  * 角色 业务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("roleService")
 public class RoleServiceImpl implements IRoleService

@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * 表格请求参数封装
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class PageUtilEntity
 {

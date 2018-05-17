@@ -1,13 +1,14 @@
 package com.reportcenter.project.monitor.online.domain;
 
-import java.util.Date;
 import com.reportcenter.framework.web.page.PageDomain;
 import com.reportcenter.project.monitor.online.domain.OnlineSession.OnlineStatus;
+
+import java.util.Date;
 
 /**
  * 当前在线会话 sys_user_online
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class UserOnline extends PageDomain
 {

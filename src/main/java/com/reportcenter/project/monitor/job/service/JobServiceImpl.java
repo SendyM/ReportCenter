@@ -1,22 +1,23 @@
 package com.reportcenter.project.monitor.job.service;
 
-import java.util.List;
-import javax.annotation.PostConstruct;
-import org.quartz.CronTrigger;
-import org.quartz.Scheduler;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.common.constant.ScheduleConstants;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.common.utils.security.ShiroUtils;
 import com.reportcenter.project.monitor.job.dao.IJobDao;
 import com.reportcenter.project.monitor.job.domain.Job;
 import com.reportcenter.project.monitor.job.util.ScheduleUtils;
+import org.quartz.CronTrigger;
+import org.quartz.Scheduler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.PostConstruct;
+import java.util.List;
 
 /**
  * 定时任务调度信息 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("jobService")
 public class JobServiceImpl implements IJobService

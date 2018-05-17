@@ -1,8 +1,10 @@
 package com.reportcenter.framework.shiro.web.filter.online;
 
-import java.io.IOException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import com.reportcenter.common.constant.ShiroConstants;
+import com.reportcenter.common.utils.security.ShiroUtils;
+import com.reportcenter.framework.shiro.session.OnlineSessionDAO;
+import com.reportcenter.project.monitor.online.domain.OnlineSession;
+import com.reportcenter.project.system.user.domain.User;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.AccessControlFilter;
@@ -10,16 +12,14 @@ import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
-import com.reportcenter.common.constant.ShiroConstants;
-import com.reportcenter.common.utils.security.ShiroUtils;
-import com.reportcenter.framework.shiro.session.OnlineSessionDAO;
-import com.reportcenter.project.monitor.online.domain.OnlineSession;
-import com.reportcenter.project.system.user.domain.User;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import java.io.IOException;
 
 /**
  * 自定义访问控制
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class OnlineSessionFilter extends AccessControlFilter
 {

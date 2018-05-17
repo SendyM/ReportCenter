@@ -9,7 +9,7 @@ import com.reportcenter.project.system.dict.domain.DictType;
 /**
  * 字典表 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Mapper
 public interface IDictTypeDao

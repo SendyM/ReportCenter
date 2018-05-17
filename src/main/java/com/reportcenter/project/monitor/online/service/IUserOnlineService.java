@@ -1,13 +1,14 @@
 package com.reportcenter.project.monitor.online.service;
 
+import com.reportcenter.project.monitor.online.domain.UserOnline;
+
 import java.util.Date;
 import java.util.List;
-import com.reportcenter.project.monitor.online.domain.UserOnline;
 
 /**
  * 在线用户 服务层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IUserOnlineService
 {

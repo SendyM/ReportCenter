@@ -5,7 +5,7 @@ import com.reportcenter.framework.web.page.PageDomain;
 /**
  * 字典数据表 sys_dict_data
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class DictData extends PageDomain
 {

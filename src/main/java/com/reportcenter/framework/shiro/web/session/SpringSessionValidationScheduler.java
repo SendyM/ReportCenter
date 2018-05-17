@@ -1,18 +1,19 @@
 package com.reportcenter.framework.shiro.web.session;
 
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 import org.apache.shiro.session.mgt.DefaultSessionManager;
 import org.apache.shiro.session.mgt.SessionValidationScheduler;
 import org.apache.shiro.session.mgt.ValidatingSessionManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
 /**
  * 自定义任务调度器完成
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class SpringSessionValidationScheduler implements SessionValidationScheduler
 {

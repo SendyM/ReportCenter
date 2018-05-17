@@ -1,12 +1,13 @@
 package com.reportcenter.project.system.role.dao;
 
-import java.util.List;
 import com.reportcenter.project.system.role.domain.RoleMenu;
+
+import java.util.List;
 
 /**
  * 角色与菜单关联表 数据层
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public interface IRoleMenuDao
 {

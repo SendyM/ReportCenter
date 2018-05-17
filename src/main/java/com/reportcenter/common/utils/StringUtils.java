@@ -1,13 +1,14 @@
 package com.reportcenter.common.utils;
 
+import org.apache.commons.lang.text.StrBuilder;
+
 import java.util.Collection;
 import java.util.Map;
-import org.apache.commons.lang.text.StrBuilder;
 
 /**
  * 字符串工具类
  * 
- * @author ruoyi
+ * @author Sendy
  */
 public class StringUtils
 {

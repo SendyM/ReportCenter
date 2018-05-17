@@ -1,15 +1,16 @@
 package com.reportcenter.project.monitor.operlog.service;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.project.monitor.operlog.dao.IOperLogDao;
 import com.reportcenter.project.monitor.operlog.domain.OperLog;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 操作日志 服务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("operLogService")
 public class OperLogServiceImpl implements IOperLogService

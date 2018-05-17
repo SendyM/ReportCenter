@@ -1,17 +1,18 @@
 package com.reportcenter.project.system.post.service;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import com.reportcenter.common.utils.StringUtils;
 import com.reportcenter.common.utils.security.ShiroUtils;
 import com.reportcenter.project.system.post.dao.IPostDao;
 import com.reportcenter.project.system.post.domain.Post;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 岗位信息 服务层处理
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Service("postService")
 public class PostServiceImpl implements IPostService

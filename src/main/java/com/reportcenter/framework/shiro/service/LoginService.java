@@ -16,7 +16,7 @@ import com.reportcenter.project.system.user.service.IUserService;
 /**
  * 登录校验方法
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Component
 public class LoginService

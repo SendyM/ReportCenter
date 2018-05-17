@@ -1,23 +1,23 @@
 package com.reportcenter.framework.shiro.session;
 
-import javax.servlet.http.HttpServletRequest;
+import com.reportcenter.common.utils.IpUtils;
+import com.reportcenter.common.utils.ServletUtils;
+import com.reportcenter.common.utils.StringUtils;
+import com.reportcenter.project.monitor.online.domain.OnlineSession;
+import com.reportcenter.project.monitor.online.domain.UserOnline;
+import eu.bitwalker.useragentutils.UserAgent;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.session.mgt.SessionContext;
 import org.apache.shiro.session.mgt.SessionFactory;
 import org.apache.shiro.web.session.mgt.WebSessionContext;
 import org.springframework.stereotype.Component;
-import com.reportcenter.common.utils.ServletUtils;
-import com.reportcenter.common.utils.IpUtils;
-import com.reportcenter.common.utils.StringUtils;
-import com.reportcenter.project.monitor.online.domain.OnlineSession;
-import com.reportcenter.project.monitor.online.domain.UserOnline;
 
-import eu.bitwalker.useragentutils.UserAgent;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 自定义sessionFactory会话
  * 
- * @author ruoyi
+ * @author Sendy
  */
 @Component
 public class OnlineSessionFactory implements SessionFactory
